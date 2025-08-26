@@ -60,10 +60,7 @@ const _layout = () => {
                 borderLeftWidth : -1 , 
                 borderRightWidth : -1 ,
                 borderBottomWidth : -1 ,
-                borderColor : '#0f0d23',
-                 
-                
-                
+                borderColor : '#0f0d23',              
             }
         }}
     >
@@ -82,20 +79,7 @@ const _layout = () => {
             
             }}
         />
-    <Tabs.Screen
-        name="saved"
-        options={{  title : "Saved" ,
-             headerShown: false , 
-             tabBarIcon : ({focused}) => (
-                <TabIcon  
-                    focused={focused} 
-                    icon={icons.save}
-                    title="Saved" 
-                    />
-            )
-            }}
-    />
-    <Tabs.Screen
+          <Tabs.Screen
         name="search"
         options={{  title : "Search" ,
              headerShown: false ,
@@ -108,6 +92,20 @@ const _layout = () => {
             )
             }}
     />
+    <Tabs.Screen
+        name="saved"
+        options={{  title : "Saved" ,
+             headerShown: false , 
+             tabBarIcon : ({focused}) => (
+                <TabIcon  
+                    focused={focused} 
+                    icon={icons.save}
+                    title="Saved" 
+                    />
+            )
+        }}
+        />
+  
         <Tabs.Screen
             name="profile"
             options={{ title: "Profile",
